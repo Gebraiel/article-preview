@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="drawer"></div>
+    <article>
+      <h1>  Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h1>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps 
+  it felt slightly bare and uninviting. I’ve got some simple tips 
+  to help you make any room feel complete.
+
+      </p>
+      <div class="share">
+        <div class="share-options">
+          <p>SHARE</p>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <span class="user">
+          <picture><img src="images/avatar-michelle.jpg" alt="avatar"></picture>
+          <p>
+            <b>Michelle Appleton</b><br>
+            <small>28 Jun 2020</small>
+          </p>
+        </span>
+        <span class="share-icon">
+          
+          <i class="fa-solid fa-share"></i>
+        </span>
+      </div>
+    </article>
+    
+    
+  </main>
+  <script>
+
+    let shareContainer = document.querySelector('.share');
+    let shareIcon = document.querySelector('.share-icon');
+    shareIcon.addEventListener('click',function(){
+      shareContainer.classList.toggle('active');
+    })
+  </script>
+
+</body>
+</html>
